@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    font-size: 15px;
+}
+
+/* HomePage */
+.banner{
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner .bg{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-size: auto 100%;
+    background-position: center bottom;
+    transition: 0.5s;
+}
+
+.banner .bg-1{
+    background-image: url(../img/ParallaxMountain/0.png);
+}
+.banner .bg-2{
+    background-image: url(../img/ParallaxMountain/1.png);
+}
+.banner .bg-3{
+    background-image: url(../img/ParallaxMountain/2.png);
+}
+.banner .bg-4{
+    background-image: url(../img/ParallaxMountain/3.png);
+}
+.banner .bg-5{
+    background-image: url(../img/ParallaxMountain/4.png);
+}
+.banner .bg-6{
+    background-image: url(../img/ParallaxMountain/5.png);
+}
+.banner .bg-7{
+    background-image: url(../img/ParallaxMountain/6.png);
+}
+.banner .bg-8{
+    background-image: url(../img/ParallaxMountain/7.png);
+}
+.banner .bg-9{
+    background-image: url(../img/ParallaxMountain/8.png);
+}
+
+.banner h1{
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 7rem;
+    font-family: Pacifico;
+    color: #fff;
+    transition: 0.5s;
+}
+/* End HomePage */
+
+/* Start Content */
+.intro{
+    min-height: 50vh;
+    color: #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro img{
+    width: 300px;
+    border-radius: 50%;
+}
+
+.animation-show{
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 0.7s;
+}
+
+.active .animation-show{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.animation-show:nth-child(2){
+    transition-delay: 0.3s;
+}
+
+.animation-show:nth-child(3){
+    transition-delay: 0.6s;
+}
+.animation-show:nth-child(4){
+    transition-delay: 0.9s;
+}
+
+/* Start Game Content */
+.game p{
+    font-family: Poppins;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .banner h1{
+        top: 35%;
+        font-size: 3rem;
+    }
+}
